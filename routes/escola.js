@@ -8,7 +8,7 @@ var Escola = require('../models/Escola.js');
 router.get('/', function(req, res, next) {
   Escola.find(function (err, escola) {
     if (err) return next(err);
-    res.json(aluno);
+    res.json(escola);
   });
 });
 
