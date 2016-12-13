@@ -64,7 +64,6 @@ app.use('/professor', professor);
 app.use('/transporte', transporte);
 
 
-
 //Configuração de páginas não encontradas
 app.use(function(req, res, next) {
     var err = new Error('Página não encontrada!');
