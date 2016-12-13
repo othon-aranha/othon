@@ -3,7 +3,7 @@ var mongoose = require('mongoose');
 var TransporteSchema = new mongoose.Schema({
   nome: String,
   razao_social: String,
-  condutor: Number,
+  condutor: String,
   idade_condutor: Number,
   horarios: String,
   turnos: String
