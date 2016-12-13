@@ -9,6 +9,7 @@ var usuario = require('./routes/usuario');
 var perfil = require('./routes/perfil');
 var aluno = require('./routes/aluno');
 var escola = require('./routes/escola');
+var professor = require('./routes/professor');
 
 var mongoose = require('mongoose');
 
@@ -58,6 +59,7 @@ app.use('/usuario', usuario);
 app.use('/perfil', perfil);
 app.use('/aluno', aluno);
 app.use('/escola', escola);
+app.use('/professor', professor);
 
 
 
@@ -89,6 +91,5 @@ app.use(function(err, req, res, next) {
         error: {}
     });
 });
-
 
 module.exports = app;
